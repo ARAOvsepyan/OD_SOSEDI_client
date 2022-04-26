@@ -1,0 +1,14 @@
+.admin_main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.create_post,
+.delete_post,
+.message_store {
+    margin: 2rem;
+    width: 50%;
+    height: 2rem;
+}

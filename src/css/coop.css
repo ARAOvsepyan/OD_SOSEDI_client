@@ -1,0 +1,305 @@
+.main_coop {
+    grid-area: main;
+    display: grid;
+    grid-template-areas: 
+        'about'
+        'form';
+    
+}
+
+.content_coop {
+    grid-area: about;
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: minmax(15px, 0.5fr) 1fr 1fr minmax(15px, 0.5fr);
+}
+
+.content-title_coop {
+    place-self: center;
+    grid-column: 2 / span 1;
+    font-size: 44px;
+    font-family: var(--main-text-font);
+    color: var(--clr-text);
+}
+
+.col-1-text_coop {
+    font-family: var(--heder-logo-text-font);
+    color: var(--clr-logo-text);
+}
+
+.col-1_coop {
+    grid-column: 2 / span 1;
+    font-size: 20px;
+    font-family: var(--main-text-font);
+    color: var(--clr-text);
+}
+
+.col-2_coop {
+    grid-column: 2 / span 1;
+    font-size: 20px;
+    font-family: var(--main-text-font);
+    color: var(--clr-text);
+} 
+
+.content-img_coop {
+    grid-column: 3 / span 1;
+    grid-row: 1 / span 3;
+}
+
+.color-main-text_coop {
+    color: var(--clr-logo-text);
+    font-family: var(--heder-logo-text-font);
+}
+
+
+.coop-title_coop {
+    font-size: 44px;
+    font-family: var(--main-text-font);
+    color: var(--clr-text);
+    place-self: center;
+
+    grid-column: 2 / span 2;
+}
+
+.coop-info-tf_coop,
+.coop-info-mail_coop {
+    font-size: 18px;
+    font-family: var(--main-text-font);
+    color: var(--clr-text);
+    place-self: center;
+    text-align: center;
+    line-height: 2rem;
+    
+}
+
+.tf_coop{
+    font-family: var(--heder-logo-text-font);
+    color: var(--clr-logo-text);
+}
+
+.coop-info-tf_coop {
+    grid-column: 2 / span 1;
+}
+
+.coop-info-mail_coop {
+    grid-column: 3 / span 1;
+}
+
+.coop-form_coop {
+    grid-column: 2 / span 2;
+}
+
+.coop-form-grid_coop {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-row: auto auto auto;
+    gap: 40px;
+}
+
+.input_coop {
+    margin-left: 1rem;
+    width: 400px;
+    height: 40px;
+    border-radius: 3px;
+    border: 1px solid var(--clr-text);
+}
+
+.firstname_coop {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+}
+
+.lastname_coop {
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+}
+
+.mail_coop {
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+}
+
+.telephone_coop {
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+}
+
+.message_coop {
+    grid-column: 1 / span 2;
+    grid-row: 3 / span 1;
+    width: 942px;
+    min-height: 70px;
+}
+
+.placeholder_coop {
+    font-family: var(--heder-logo-text-font);
+    font-size: 18px;
+    color: #65657b; 
+    pointer-events: none;
+    transform-origin: 0 50%;
+    transition: transform 250ms, color 250ms;
+}
+
+.placeholder_coop:not(.message_coop) {
+    margin: 1rem;
+    margin-left: 2rem;
+
+}
+
+textarea {
+  overflow: hidden;
+  resize: none;
+  
+  line-height: 1;
+  
+}
+
+.placeholder_coop.message_coop {
+    margin-top: 2.9rem;
+    margin-left: 2rem;
+}
+
+.input_coop:hover,
+.input_coop:focus {
+    border: 2px solid var(--clr-text);
+}
+
+.input_coop.firstname_coop:focus~.placeholder_coop.firstname_coop,
+.input_coop.firstname_coop:not(:placeholder-shown)~.placeholder_coop.firstname_coop {
+    transform: translateY(-40px);
+}
+
+.input_coop.firstname_coop:focus~.placeholder_coop.firstname_coop {
+    color: var(--clr-logo-text);
+}
+
+.input_coop.lastname_coop:focus~.placeholder_coop.lastname_coop,
+.input_coop.lastname_coop:not(:placeholder-shown)~.placeholder_coop.lastname_coop {
+    transform: translateY(-40px);
+}
+
+.input_coop.lastname_coop:focus~.placeholder_coop.lastname_coop {
+    color: var(--clr-logo-text);
+}
+
+.input_coop.mail_coop:focus~.placeholder_coop.mail_coop,
+.input_coop.mail_coop:not(:placeholder-shown)~.placeholder_coop.mail_coop {
+    transform: translateY(-40px);
+}
+
+.input_coop.mail_coop:focus~.placeholder_coop.mail_coop{
+    color: var(--clr-logo-text);
+}
+
+.input_coop.telephone_coop:focus~.placeholder_coop.telephone_coop,
+.input_coop.telephone_coop:not(:placeholder-shown)~.placeholder_coop.telephone_coop {
+    transform: translateY(-40px);
+}
+
+.input_coop.telephone_coop:focus~.placeholder_coop.telephone_coop {
+    color: var(--clr-logo-text);
+}
+
+.input_coop.message_coop:focus~.placeholder_coop.message_coop,
+.input_coop.message_coop:not(:placeholder-shown)~.placeholder_coop.message_coop {
+    transform: translateY(-70px);
+}
+
+.input_coop.message_coop:focus~.placeholder_coop.message_coop {
+    color: var(--clr-logo-text);
+}
+
+.send_coop {
+    grid-column: 2 / span 1;
+    grid-row: 4 / span 1;
+    place-self: center center;
+}
+
+.send_coop {
+    font-family: var(--heder-logo-text-font);
+    background-color: var(--clr-text);
+    border-radius: 3px;
+    border: 0;
+    color: #eee;
+    cursor: pointer;
+    font-size: 18px;
+    height: 50px;   
+    text-align: center;
+    width: 65%;
+}
+  
+.send_coop:active {
+    background-color: rgb(26, 58, 48);
+}
+
+.modal_coop {
+    display: none;
+    position: fixed; /* Оставаться на месте */
+    z-index: 1; /* Сидеть на вершине */
+    left: 0;
+    top: 0;
+    width: 100%; /* Полная ширина */
+    height: 100%; /* Полная высота */
+    overflow: auto; /* Включите прокрутку, если это необходимо */
+    background-color: rgb(0,0,0); /* Цвет запасной вариант */
+    background-color: rgba(0,0,0,0.4); /* Черный с непрозрачностью */
+}
+  
+  /* Модальное содержание/коробка */
+.modal-content_coop {
+    display: grid;
+    background-color: #fefefe;
+    margin: 26% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%;
+}
+  
+  /* Кнопка закрытия */
+.close_coop {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+  
+.close_coop:hover,
+.close_coop:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.message_coop_p {
+    place-self: center center ;
+}
+
+@media screen and (max-width: 1100px) {
+    .content-img_coop{
+        width: 300px;
+        grid-column: 3 / span 1;
+        grid-row: 2 / span 2;
+        place-self: center;
+    }
+
+    .content-title_coop {
+        grid-column: 2 / span 2;
+        font-size: 44px;
+        font-family: var(--heder-logo-text-font);
+        color: var(--clr-logo-text);
+    }
+
+    .coop-form-grid_coop{
+        all: unset;
+        align-items: center;
+        display: flex;
+        flex-flow: column
+    }
+
+    .message_coop {
+        width: 400px;
+    }
+
+    
+
+};

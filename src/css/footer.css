@@ -1,0 +1,35 @@
+.footer {
+    margin: 1rem;
+    margin-top: 3rem;
+    background: var(--clr-background);
+    grid-area: footer;
+    display: grid;
+    grid-row: auto auto;
+}
+
+.footer-text a{
+    font-family: var(--heder-logo-text-font);
+    color: var(--clr-logo-text);
+    font-size: var(--header-logo-text-size);
+    text-decoration: none;
+    
+}
+
+.footer-text {
+    margin: 0;
+    place-self: center;
+}
+
+.icons {
+   
+    place-self: center;
+    display: flex;
+}
+
+.icons p{
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    align-items: center
+}

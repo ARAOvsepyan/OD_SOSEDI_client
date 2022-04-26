@@ -1,0 +1,176 @@
+.logo {
+    display: none;
+}
+
+.header {
+    text-align: center;
+    width: 100%;
+}
+
+.title a{
+    font-family: var(--heder-logo-text-font);
+    font-size: 30px;
+    color: var(--clr-logo-text);
+    text-decoration: none;
+}
+
+
+.primary-nav {
+    position: fixed;
+    z-index: 999;
+    
+    text-align: left;
+    inset: 0 min(70%, 55%) 0 0;
+    background: hsl(0 0% 100% / 0.8);
+    padding: 4vh;
+
+
+    transform: translateX(-100%);
+    transition: transform 350ms ease-out;
+}
+
+.nav-toggle {
+    display: block;
+    position: absolute;
+    z-index: 9999;
+    background: url('../images/icons/hamburger-icon-menu-8.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 0;
+    width: 1.5rem;
+    aspect-ratio: 1;
+    top: 2rem;
+    left: 2rem;
+
+    transform: rotate(360deg);
+    transition: transform 350ms ease-out;
+    
+}
+
+.nav-toggle[aria-expanded='true'] {
+    transform: rotate(180deg);
+
+    transition: transform 350ms ease-out;
+}
+
+.primary-nav[data-visible='true'] {
+    
+    transform: translateX(0%);
+}
+
+@supports (backdrop-filter: blur(1rem)) {
+    nav {
+        background: hsl(0 0% 100% / 0.1);
+        backdrop-filter: blur(.1rem);
+    }
+}
+
+nav ul {
+    margin-top: 5rem;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    margin-bottom: 1em;
+    margin-left: 1em;
+}
+
+nav a {
+    color: var(--clr-text);
+    font-family: 'Rubik';
+    font-weight: 10;
+    text-decoration: none;
+    font-size: 22px;
+    text-transform: uppercase;  
+}
+
+nav a:hover {
+    color: rgb(233, 131, 36);
+}
+
+
+@media screen and (min-width: 1100px) {
+    .header {
+        display: grid;
+        margin-top: 2rem;
+        grid-template-columns: 1fr 80px auto minmax(800px, 3fr) 1fr;
+    }
+
+    .nav-toggle {
+        display: none;
+    }
+
+    .logo {
+        display: block;
+        grid-column: 2 / span 1;
+        grid-row: 1;
+        place-self: center;
+    }
+
+    .title {
+        grid-column: 3 / span 1;
+    }
+
+    .primary-nav {
+        all: unset;
+        grid-column: 4 / span 1;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    nav li {
+        all: unset;
+        margin-left: 3em;
+        
+    }
+
+    nav ul {
+        all: unset;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    nav a {
+        text-decoration: none !important; 
+        opacity: 1;
+        position: relative;
+
+    }
+
+    nav a::before {
+        content: '';
+        display: block;
+        height: 3px;
+        background: rgb(233, 131, 36);
+        position: absolute;
+        top: -.75em;
+        left: 0;
+        right: 0;
+        transform: scale(0, 1);
+        transform-origin: left;
+        transition: transform ease-in-out 250ms;
+    }
+
+    nav a:hover::before {
+        transform: scale(1, 1);
+    }
+    
+    .active::before{
+        content: '';
+        display: block;
+        height: -10px;
+        background: rgb(233, 131, 36);
+        position: absolute;
+        top: -.75em;
+        left: 0;
+        right: 0;
+        transform: scale(1, 1);
+
+    }
+
+    .active{
+        color: rgb(233, 131, 36);
+    }
+}

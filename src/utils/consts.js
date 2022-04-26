@@ -1,0 +1,7 @@
+export const ADMIN_ROUTE = '/admin'
+export const ABOUT_ROUTE = '/about'
+export const BLOG_ROUTE = '/blog'
+export const COOPERATION_ROUTE = '/cooperation'
+export const MAIN_ROUTE = '/'
+export const AUTH_ROUTE = '/login'
+export const MESSAGE_ROUTE = '/message'

@@ -1,0 +1,341 @@
+.main_main {
+    grid-area: main;
+    display: grid;
+    grid-template-areas: 
+        'about'
+        'searcher'
+        'blog';
+    
+}
+
+/* text about */
+
+.content_main {
+    grid-area: about;
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: minmax(15px, 0.5fr) 1fr 1fr minmax(15px, 0.5fr);
+}
+
+.content-title_main {
+    place-self: center;
+    grid-column: 2 / span 1;
+    font-size: 44px;
+    font-family: var(--heder-logo-text-font);
+    color: var(--clr-logo-text);
+}
+
+.col-1-text_main {
+    font-family: var(--heder-logo-text-font);
+    color: var(--clr-logo-text);
+}
+
+.col-1_main {
+    grid-column: 2 / span 1;
+    font-size: 20px;
+    font-family: var(--main-text-font);
+    color: var(--clr-text);
+}
+
+.col-2_main {
+    grid-column: 2 / span 1;
+    font-size: 20px;
+    font-family: var(--main-text-font);
+    color: var(--clr-text);
+} 
+
+.content-img_main {
+    grid-column: 3 / span 1;
+    grid-row: 1 / span 3;
+}
+
+
+.color-search-text_main,
+.color-main-text_main {
+    color: var(--clr-logo-text);
+    font-family: var(--heder-logo-text-font);
+}
+
+
+/* Search */
+
+.search-bar_main {
+    margin-top: 10rem;
+    display: grid;
+    grid-auto-columns: minmax(15px, 1fr) 1fr 1fr minmax(15px, 1fr);
+    grid-template-rows: 120px 120px;
+}
+
+.search-title_main {
+    font-family: var(--main-text-font);
+    font-size: 44px;
+    color: var(--clr-text);
+    grid-column: 2 / span 2;
+    grid-row: 1;
+    place-self: center;
+}
+
+.info_main {
+    place-self: center;
+    font-family: var(--main-text-font);
+    font-size: 22px;
+    color: var(--clr-text);
+    grid-column: 2 / span 1;
+    grid-row: 2;
+}
+
+
+.placeholder_main {
+    grid-column: 3 / span 1;
+    grid-row: 2 / span 1;
+    place-self: start start;
+    margin: 1rem;
+    margin-top: 3.25rem;
+    font-family: var(--main-text-font);
+    font-weight: bold;
+    color: #65657b;
+    left: 55rem;
+    line-height: 14px;
+    pointer-events: none;
+    transform-origin: 0 50%;
+    transition: transform 250ms, color 250ms;
+}
+
+
+.react-dadata__container {
+    grid-column: 3 / span 1;
+    grid-row: 2 / span 2;
+}
+
+.react-dadata__input {
+    display: grid;
+    width: 100%;
+    margin-bottom: 1rem;
+    margin-top: 2.5rem;
+    height: 2.5rem;
+    background-color: #ffffff;
+    border-radius: 3px;
+    border: 1px solid var(--clr-text);
+    font-size: 18px;
+    outline: 0;
+}
+
+.react-dadata__suggestions {
+    cursor: pointer !important;
+    z-index: 10;
+    background-color: #fff;
+    box-shadow: 0 1px 6px 3px rgb(0 0 0 / 10%);
+    position: relative;
+    border-radius: 4px;
+    overflow: hidden;
+    left: 0;
+    right: 0;
+    text-align: left;
+   
+}
+
+.react-dadata__suggestion {
+    font-size: 15px;
+    padding: 7px 10px;
+    cursor: pointer !important;
+    box-sizing: border-box;
+    width: 100%;
+    display: block;
+    background: none;
+    border: none;
+    text-align: left;
+}
+
+.react-dadata--highlighted {
+    font-family: var(--heder-logo-text-font);
+    color: var(--clr-logo-text)
+}
+
+.react-dadata__suggestion-note {
+    font-size:14px;
+    color:#828282;
+    padding:10px 10px 5px
+   }
+
+.react-dadata__input:focus {
+    border: 2px solid var(--clr-text);
+}
+
+.search_main {
+    margin-top: 2.5rem;
+    grid-column: 4 / span 1;
+    grid-row: 2;
+    margin-left: 1rem;
+    place-self: start start;
+    height: 2.5rem;
+    background-color: white;
+    border-radius: 3px;
+    border: 1px solid var(--clr-text);
+    color: var(--clr-text);
+    cursor: pointer;
+    font-size: 18px;
+    text-align: center;
+}
+
+.search_main:hover {
+    background-color: var(--clr-text);
+    color: white;
+}
+
+.search_main:active {
+    background-color: rgb(25, 57, 48);
+    
+}
+
+.btn_main {
+	grid-column: 3 / span 1;
+	grid-row: 3;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.btn_main > * 
+{   
+	margin: 1rem 0 1rem 0;
+	font-family: var(--heder-logo-text-font);
+	font-size: 20px;
+	color: var(--clr-logo-text);
+	background-color: rgba(33, 83, 68, 0);
+	border: 0px;
+    cursor: pointer;
+	height: 2rem;
+	text-align: start;
+}
+
+
+.adress_link {
+    color: var(--clr-logo-text)  !important;
+    text-decoration: none !important;
+}
+
+.blog_main  {
+    margin: 5rem;
+    grid-area: blog;
+    display: grid;
+    place-items: center;
+}
+
+.container_blog {
+    margin-top: 1rem;
+}
+
+.view_blog {
+    margin: auto;
+    margin-top: 2rem;
+    font-family: var(--heder-logo-text-font);
+    background-color: var(--clr-text);
+    border-radius: 3px;
+    border: 0;
+    color: #eee;
+    cursor: pointer;
+    font-size: 18px;
+    height: 30px;
+    text-align: center;
+    width: 100%;
+}
+
+.view_blog:focus {
+    background-color: rgb(25, 57, 48);
+}
+
+
+@media screen and (max-width: 1100px) {
+    .content-title_main {
+        grid-column: 2 /span 2;
+    }
+
+    .search-bar_main {
+        grid-area: searcher;
+        display: grid;
+        gap: 1.5rem;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .content-img_main{
+        width: 300px;
+        grid-column: 3 / span 1;
+        grid-row: 2 / span 2;
+        place-self: center;
+    }
+
+    .search-title_main {
+        font-family: var(--main-text-font);
+        font-size: 30px;
+        color: var(--clr-text);
+        grid-column: 2 / span 2;
+        grid-row: 1;
+        place-self: center;
+    }
+    
+    .info_main {
+        place-self: center;
+        font-family: var(--main-text-font);
+        font-size: 18px;
+        color: var(--clr-text);
+        grid-column: 2 / span 2;
+        grid-row: 2;
+    }
+
+
+    .react-dadata__container {
+        grid-column: 2 / span 2;
+        grid-row: 3 / span 2;
+    }
+    
+    .search_main {
+        margin-top: 2.5rem;
+        grid-column: 3 / span 1;
+        grid-row: 3;
+        margin-left: 1rem;
+        place-self: center end;
+        height: 2.5rem;
+        background-color: white;
+        border-radius: 3px;
+        border: 1px solid var(--clr-text);
+        color: var(--clr-text);
+        cursor: pointer;
+        font-size: 18px;
+        text-align: center;
+    }
+    
+    .react-dadata__input {
+        display: grid;
+        width: 70%;
+        margin-bottom: 1rem;
+        margin-top: 2.5rem;
+        height: 2.5rem;
+        background-color: #ffffff;
+        border-radius: 3px;
+        border: 1px solid var(--clr-text);
+        font-size: 18px;
+        outline: 0;
+    }
+
+    .btn_main {
+        grid-column: 2 / span 2;
+        grid-row: 4;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .btn_main > * 
+    {   
+        margin: 1rem 0 1rem 0;
+        font-family: var(--heder-logo-text-font);
+        font-size: 20px;
+        color: var(--clr-logo-text);
+        background-color: rgba(33, 83, 68, 0);
+        border: 0px;
+        cursor: pointer;
+        height: 2rem;
+        text-align: start;
+    }
+    
+}

@@ -1,0 +1,45 @@
+.auth_main {
+    margin: 1rem;
+    display: grid;
+    grid-template-columns: minmax(15px, 1fr) auto minmax(15px, 1fr);
+}
+
+.auth_form {
+    grid-column: 2 /span 1;
+    border: 1px solid var(--clr-logo-text);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.auth_input {
+    display: flex;
+    flex-direction: column;
+}
+
+.auth_login,
+.auth_password {
+    margin: 1rem;
+    width: 300px;
+    height: 50px;
+    font-family: var(--main-text-font);
+}
+
+.auth_send {
+    font-family: var(--main-text-font);
+    font-weight: bold;
+    color: white;
+    background-color: var(--clr-text);
+    font-size: 15px;
+    margin: 1rem;
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.auth_login:focus,
+.auth_password:focus {
+   border: 2px solid var(--clr-text);
+   outline: none 
+}

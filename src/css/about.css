@@ -1,0 +1,56 @@
+.main_about {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: minmax(15px, 0.5fr) 1fr 1fr minmax(15px, 0.5fr); 
+    width: 100%;
+}
+
+.text_about {
+    grid-column: 2 / span 1;
+    text-align: center;
+}
+
+
+h2 {
+    font-family: var(--heder-logo-text-font);
+    color: var(--clr-logo-text);
+    font-size: 44px;
+}
+
+h3,
+p {
+    font-family: var(--main-text-font);
+    color: var(--clr-text);
+    font-size: 22px;
+}
+
+@media screen and (max-width: 1100px) {
+    .img_about{
+        display: none;
+    }
+
+    .text_about {
+        grid-column: 2 / span 2;
+        text-align: center;
+        place-self: center;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .img_about {
+        width: 400px;
+        place-self: center;
+    }
+}
+
+.future_projects_about{
+    grid-column: 2 / span 2;
+    text-align: center;
+    
+}
+
+.future_projects_about li{
+    list-style: none;
+    cursor: context-menu;
+}
+
