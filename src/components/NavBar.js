@@ -32,9 +32,9 @@ const NavBar = () => {
             <nav  data-visible='false' className="primary-nav" id="navigation">
                 <ul>
                     <li><NavLink to = {MAIN_ROUTE} >Главная</NavLink></li>
-                    <li><NavLink to = {BLOG_ROUTE} activeclassname="active">Блог</NavLink></li>
+                    <li><NavLink to = {BLOG_ROUTE} activeclassname="active">Новости</NavLink></li>
                     <li><NavLink to = {COOPERATION_ROUTE} activeclassname="active">Сотрудничество</NavLink></li>
-                    <li><NavLink to = {ABOUT_ROUTE} activeclassname="active">О проекте</NavLink></li>
+                    <li><NavLink to = {ABOUT_ROUTE} activeclassname="active">О нас</NavLink></li>
                 </ul>
             </nav>
         </div>

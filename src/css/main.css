@@ -5,7 +5,9 @@
         'about'
         'searcher'
         'blog';
-    
+    background-image: url('../images/background.png');
+    background-attachment: fixed;
+    margin-bottom: 3rem;
 }
 
 /* text about */
@@ -14,34 +16,45 @@
     grid-area: about;
     display: grid;
     gap: 1.5rem;
-    grid-template-columns: minmax(15px, 0.5fr) 1fr 1fr minmax(15px, 0.5fr);
+    grid-template-columns: minmax(15px, 0.5fr) .8fr 1fr minmax(15px, 0.5fr);
 }
 
 .content-title_main {
-    place-self: center;
     grid-column: 2 / span 1;
-    font-size: 44px;
-    font-family: var(--heder-logo-text-font);
-    color: var(--clr-logo-text);
+    font-size: 30px;
+    font-family: var(--main-text-font);
+    font-weight: bold;
+    color: var(--clr-text);
+    place-self: end center;
 }
 
 .col-1-text_main {
-    font-family: var(--heder-logo-text-font);
+    font-family: var(--main-text-font);
+    font-weight: bold;
     color: var(--clr-logo-text);
+    text-align: justify;
+    text-indent: 1.5rem
 }
 
 .col-1_main {
     grid-column: 2 / span 1;
-    font-size: 20px;
+    font-size: 22px;
+    font-weight: bold;
     font-family: var(--main-text-font);
     color: var(--clr-text);
+    text-align:justify;
+    text-indent: 1.5rem;
+    place-self: end center;
 }
 
 .col-2_main {
     grid-column: 2 / span 1;
-    font-size: 20px;
+    font-size: 22px;
+    font-weight: bold;
     font-family: var(--main-text-font);
     color: var(--clr-text);
+    text-align:justify;
+    text-indent: 1.5rem
 } 
 
 .content-img_main {
@@ -69,19 +82,28 @@
 .search-title_main {
     font-family: var(--main-text-font);
     font-size: 44px;
+    font-weight: bold;
     color: var(--clr-text);
     grid-column: 2 / span 2;
     grid-row: 1;
     place-self: center;
 }
 
+.color-main-text_main {
+    font-family: var(--main-text-font);
+    font-weight: bold;
+    color: var(--clr-logo-text);
+}
+
 .info_main {
     place-self: center;
     font-family: var(--main-text-font);
+    font-weight: bold;
     font-size: 22px;
     color: var(--clr-text);
     grid-column: 2 / span 1;
     grid-row: 2;
+    
 }
 
 
@@ -219,6 +241,12 @@
     grid-area: blog;
     display: grid;
     place-items: center;
+}
+
+.blog_main h2 {
+    font-family: var(--main-text-font);
+    color: var(--clr-text);
+    font-weight: bold;
 }
 
 .container_blog {

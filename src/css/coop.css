@@ -4,7 +4,10 @@
     grid-template-areas: 
         'about'
         'form';
-    
+    background-image: url('../images/background.png');
+    background-attachment: fixed;
+    margin-bottom: 3rem;
+    padding-bottom: 3rem;
 }
 
 .content_coop {
@@ -14,21 +17,16 @@
     grid-template-columns: minmax(15px, 0.5fr) 1fr 1fr minmax(15px, 0.5fr);
 }
 
-.content-title_coop {
-    place-self: center;
-    grid-column: 2 / span 1;
-    font-size: 44px;
-    font-family: var(--main-text-font);
-    color: var(--clr-text);
-}
 
 .col-1-text_coop {
+
     font-family: var(--heder-logo-text-font);
     color: var(--clr-logo-text);
 }
 
 .col-1_coop {
     grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
     font-size: 20px;
     font-family: var(--main-text-font);
     color: var(--clr-text);
@@ -57,7 +55,7 @@
     font-family: var(--main-text-font);
     color: var(--clr-text);
     place-self: center;
-
+    text-align: center;
     grid-column: 2 / span 2;
 }
 

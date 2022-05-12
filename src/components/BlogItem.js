@@ -2,6 +2,11 @@ import React from 'react';
 import '../css/blog.css'
 
 const BlogItem = ({blog}) => {
+
+    const click = (link) => {
+        
+    }
+
     return (
         <div class="card_blog">
             <div class="card__header_blog">

@@ -15,10 +15,10 @@ const Blog = () => {
     return (
         <main className='main_blog'>
             <Helmet>
-                <title> ОД «СОСЕДИ» | Блог</title>
+                <title> ОД «СОСЕДИ» | Новости</title>
             </Helmet>
-            <h2>Блог</h2>
-            <p>*Текст который я не придумал)</p>
+            <h2 className='blog_page_title'>Последние новости</h2>
+            <p>Здесь публикуются самые интересные новости из наших каналов</p>
             <BlogList/>
         </main>
     )

@@ -1,10 +1,7 @@
 .footer {
-    margin: 1rem;
-    margin-top: 3rem;
     background: var(--clr-background);
     grid-area: footer;
     display: grid;
-    grid-row: auto auto;
 }
 
 .footer-text a{

@@ -29,12 +29,27 @@ const Main = observer(() => {
 
     const findAdress = () =>{
         fetchAdress(addreses.split('/').join(' ')).then(data => {
-            setButton_1_value('🌃 СОСЕДИ ' + data[0].name)
-            setButton_1_link(data[0].link)
-            setButton_2_value('🌆 СОСЕДИ ' + data[1].name)
-            setButton_2_link(data[1].link)
-            setButton_3_value('🌇 СОСЕДИ ' + data[2].name)
-            setButton_3_link(data[2].link)
+            if (data[0].name == null) {
+                setButton_1_value(' ')
+            } else {
+                setButton_1_value('🌃 СОСЕДИ ' + data[0].name)
+                setButton_1_link(data[0].link)  
+            }
+            
+            if (data[1].name == null) {
+                setButton_2_value(' ')
+            } else {
+                setButton_2_value('🌆 СОСЕДИ ' + data[1].name)
+                setButton_2_link(data[1].link)
+            }
+
+            if (data[2].name == null) {
+                setButton_3_value(' ')
+            } else {
+                setButton_3_value('🌇 СОСЕДИ ' + data[2].name)
+                setButton_3_link(data[2].link)
+            }
+            
             document.getElementById('button').style.zIndex = '2'
         })
     }
@@ -45,16 +60,16 @@ const Main = observer(() => {
                 <title> ОД «СОСЕДИ» | Главная</title>
             </Helmet>
             <div className="content_main">
-                <h2 className="content-title_main">О нас</h2>
-                <div className="col-1_main"><span className="col-1-text_main">ОД «СОСЕДИ»</span> объединяет!<br /> Здесь мы делимся советами, проблемами, инсайдами и новостями. <br />
+                <h2 className="content-title_main">ОД "СОСЕДИ" объединяет!</h2>
+                <div className="col-1_main">Здесь мы делимся советами, проблемами, инсайдами и новостями. <br />
                 </div>
                 <div className="col-2_main">Оперативное информирование о событиях нашего города, только важные новости и полезная информация.
                 </div>
                 <img src={image} className='content-img_main' width='500' alt='' />
             </div>
             <div className="search-bar_main">
-                <h2 className="search-title_main">Мы в <span className="color-main-text_main">"Telegram"</span></h2>
-                <lable className="info_main">Введите свой адрес и найдите телеграм каналы <span className="color-search-text_main">Вашего района.</span></lable>
+                <h2 className="search-title_main">Найди своих <span className="color-main-text_main">СОСЕДЕЙ</span></h2>
+                <lable className="info_main">Введи свой адрес и найди <span className="color-main-text_main">телеграм каналы своего района.</span></lable>
                 <AddressSuggestions
                     token={API_TOKEN}
                     deferRequestBy={300}
@@ -85,12 +100,12 @@ const Main = observer(() => {
                 </div>
             </div>
             <div className="blog_main">
-                <h2>Наш блог</h2>
+                <h2>Последние новости</h2>
                 <div class="container_blog">
                         <BlogList/>
                 </div>
                 <NavLink to = {BLOG_ROUTE}>
-                    <button className='view_blog'>Еще...</button>
+                    <button className='view_blog'>Еще</button>
                 </NavLink>
             </div>
         </main>

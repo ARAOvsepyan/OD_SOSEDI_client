@@ -49,12 +49,10 @@ const Coop = () => {
           <title> ОД «СОСЕДИ» | Сотрудничество</title>
         </Helmet>
         <div className="content_coop">
-          <h2 className="content-title_coop">СОТРУДНИЧЕСТВО</h2>
           <div className="col-1_coop">*Текст про покупку рекламы + приложу пдф-прайслист*</div>
           <img src={coop_image} className='content-img_coop' width='500' alt='' />
-          <h2 className="coop-title_coop">Свяжитесь с нами</h2>
-          <p className="coop-info-tf_coop"> <span className="tf_coop">Телефон</span><br/> +7 (977) 362-20-01 </p>
-          <p className="coop-info-mail_coop"><span className="tf_coop">E-mail</span> <br/>ara07.99@icloud.com</p>
+          <h2 className="coop-title_coop">Оставьте свои контактные данные <br /> и мы с вами свяжемся</h2>
+
 
           <div className="coop-form_coop">
             <div className="coop-form-grid_coop">

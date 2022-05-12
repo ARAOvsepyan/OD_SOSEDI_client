@@ -3,16 +3,27 @@
     display: grid;
     grid-template-columns: minmax(15px, 0.5fr) 1fr 1fr minmax(15px, 0.5fr); 
     width: 100%;
+    background-image: url('../images/background.png');
+    background-attachment: fixed;
+    margin-bottom: 3rem;
+    padding-bottom: 3rem;
+}
+
+.title_about {
+    text-align: center;
+    font-size: 35px;
 }
 
 .text_about {
     grid-column: 2 / span 1;
-    text-align: center;
+    text-align: justify;
+    text-indent: 1.5rem
 }
 
 
 h2 {
-    font-family: var(--heder-logo-text-font);
+    font-family: var(--main-text-font);
+    font-weight: bold;
     color: var(--clr-logo-text);
     font-size: 44px;
 }
@@ -20,6 +31,7 @@ h2 {
 h3,
 p {
     font-family: var(--main-text-font);
+    font-weight: bold;
     color: var(--clr-text);
     font-size: 22px;
 }

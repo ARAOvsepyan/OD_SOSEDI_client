@@ -10,7 +10,7 @@ const About = () => {
                 <title> ОД «СОСЕДИ» | О проекте</title>
             </Helmet>
             <div className="text_about">
-                <h2 className="title_about">О проекте</h2>
+                <h2 className="title_about">Подробная информация о "CОСЕДЯХ"</h2>
                 <h3 className="sub_title_about">С чего все начиналось</h3>
                 <p className="text_about">
                     На мой взгляд, в современном мире важны такие качества, 
@@ -28,15 +28,9 @@ const About = () => {
                 </p>
             </div>
             <img className="img_about" src={image_about} alt=''/>
-            <div className='future_projects_about'>
-                <h2>Будущие проекты</h2>
-                <ul className='plans_about'>
-                    <li><p>Проект 1</p></li>
-                    <li><p>Проект 2</p></li>
-                    <li><p>Проект 3</p></li>
-                    <li><p>Проект 3</p></li>
-                </ul>
-            </div>
+            <p className="coop-info-tf_coop"> <span className="tf_coop">Телефон</span><br/> +7 (977) 362-20-01 </p>
+            <p className="coop-info-mail_coop"><span className="tf_coop">E-mail</span> <br/>ara07.99@icloud.com</p>
+            
     </main>
     )
   }

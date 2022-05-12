@@ -1,10 +1,11 @@
 :root {
-    --clr-text: rgb(33, 83, 68);
-    --clr-logo-text: rgb(233, 131, 36);
+    --clr-nav-text: rgb(3 46 14);
+    --clr-text: rgb(3 46 14);
+    --clr-logo-text: rgb(229 88 4);
     --clr-background: rgba(253, 253, 253, 0.85);
     --header-logo-text-size: 22px;
     --heder-logo-text-font: 'Rubik', sans-serif;
-    --main-text-font: 'Montserrat', sans-serif;
+    --main-text-font: 'Lora', serif;
 }
 
 *,
