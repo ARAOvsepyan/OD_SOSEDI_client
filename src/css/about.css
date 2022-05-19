@@ -3,7 +3,7 @@
     display: grid;
     grid-template-columns: minmax(15px, 0.5fr) 1fr 1fr minmax(15px, 0.5fr); 
     width: 100%;
-    background-image: url(https://i.ibb.co/tms1fKY/pngwing-com.png);
+    background-image: url('../images/pngwing.com.png');
     background-attachment: fixed;
     margin-bottom: 3rem;
     padding-bottom: 3rem;
