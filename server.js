@@ -1,5 +1,7 @@
 const express = require('express')
 const path = require('path')
+const ip = require('ip');
+const ipAddress = ip.address();
 
 const PORT = process.env.PORT || 3000
 
@@ -11,4 +13,4 @@ app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, 'build', 'index.html'))
 })
 
-app.listen(PORT)
+app.listen(PORT, ()=>(console.log(PORT, ipAddress)))
