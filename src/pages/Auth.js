@@ -17,7 +17,7 @@ const Auth = observer(() => {
         try {
             let data;
             data = await login(email, password);
-            user.setUser(user)
+            user.setUser(data)
             user.setIsAuth(true)
             navigate(ADMIN_ROUTE)
         } catch (e) {

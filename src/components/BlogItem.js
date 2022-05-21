@@ -3,9 +3,9 @@ import '../css/blog.css'
 
 const BlogItem = ({blog}) => {
 
-    const click = (link) => {
+    // const click = (link) => {
         
-    }
+    // }
 
     return (
         <div class="card_blog">
